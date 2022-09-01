@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.Math;
+class reddy extends Thread{
+    public void run(){
+        for(int i = 0;i<=9;i++){
+        Random ra = new Random();
+        int a = ra.nextInt(100);
+        if (a%2==0){
+             System.out.println(a+" "+"is a positive even number");
+        } else if (a%2!=0) {
+            System.out.println(a+" "+"is a postive odd number");
+        } else if (a>0) {
+            System.out.println(a+" "+"number is greater than Zero");
+        }
+        else{
+            System.out.println(a+" "+"number is less than Zero");
+        }
+
+        }
+
+    }
+    public static void main(String[] args){
+        reddy t1 =new reddy();
+        t1.start();
+    }
+}

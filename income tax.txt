@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.*;
+public class employeer {
+    {
+        public static void main (String args[])
+        {
+            int salary, minsalary = 50000;
+            double tax;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the salary:");
+            salary = sc.nextInt();
+            if (salary <= minsalary) {
+                tax = 0;
+                System.out.println(tax);
+            } else if (salary > minsalary && salary <= 60000) {
+                tax = (salary - minsalary) * 0.1;
+                System.out.println(tax);
+            } else if (salary > minsalary && salary <= 150000) {
+                tax = (salary - minsalary) * 0.2;
+                System.out.println(tax);
+            } else {
+                tax = (salary - minsalary) * 0.3;
+                System.out.println(tax);
+            }
+        }
+
+    }
+}

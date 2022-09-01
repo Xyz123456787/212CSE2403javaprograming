@@ -1,0 +1,15 @@
+import java.util.*;
+import java.io.FileInputStream;
+class reddy{
+    public static void main(String args[]){
+        try{
+          FileInputStream obj = new FileInputStream("C:\\Users\\balu\\Downloads\\Test.html");
+          int i  = obj.read();
+          System.out.println((char)i);
+
+        }
+        catch(Exception e){
+
+        }
+    }
+}

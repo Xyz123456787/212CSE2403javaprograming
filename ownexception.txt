@@ -1,0 +1,42 @@
+import java.util.*;
+class ownexception extends Exception{
+    public ownexception(String str){
+        super(str);
+    }
+}
+public class reddy{
+    static  void age(int a) throws ownexception {
+        if (a > 120) {
+            throw new ownexception("age is greater than 120");
+
+        }
+        else{
+            throw new ownexception("age is less than 120");
+        }
+    }
+        static void number(long number) throws ownexception{
+           if(number > 10){
+               throw new ownexception("number is greater 10");
+           }
+           else{
+               throw new ownexception("number is less than 10");
+           }
+
+    }
+    public static void main(String[] args){
+        try{
+            age(13);
+        }
+        catch (Exception ex){
+            System.out.println("an error occured");
+        }
+        try{
+            number(992100407);
+
+        }
+        catch(Exception ex){
+            System.out.println("an error occured");
+        }
+
+    }
+}
